@@ -84,7 +84,7 @@
 
         var meta = document.createElement('meta');
         meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=no';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
         container.className = "unity-mobile";
         canvas.className = "unity-mobile";
@@ -92,7 +92,7 @@
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
-
+        document.querySelector("#unity-fullscreen-button").onclick();
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
@@ -114,7 +114,7 @@
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
           };
-          document.querySelector("#unity-fullscreen-button").onclick();
+          
         }).catch((message) => {
           alert(message);
         });
