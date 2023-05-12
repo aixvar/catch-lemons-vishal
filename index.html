@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" style="position: absolute; width: 100%; height: 100%">
-      <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}}></canvas>
+      <canvas id="unity-canvas" width=100% height=100%></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -105,9 +105,9 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {   
-          unityInstance.SetFullscreen(1);       
+                 
           fullscreenButton.onclick = () => {
-            
+            unityInstance.SetFullscreen(1);
           };
         }).catch((message) => {
           alert(message);
