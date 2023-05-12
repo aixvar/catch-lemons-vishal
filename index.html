@@ -110,7 +110,7 @@
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
           };
-          document.getElementById("fullscreenButton").click();
+          document.querySelector("#unity-fullscreen-button").onclick();
         }).catch((message) => {
           alert(message);
         });
