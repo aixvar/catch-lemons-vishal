@@ -1,7 +1,7 @@
 {
-  "name": "Web App Manifest Demo",
-  "short_name": "ManifestDemo",
-  "theme_color": "orange",
+  "name": "Catch Lemons dev v1",
+  "short_name": "CatchLemons",
+  "theme_color": "yellow",
   "background_color": "silver",
   "start_url": "./",
   "id": "demo-1",
