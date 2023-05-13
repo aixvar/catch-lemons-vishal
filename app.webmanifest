@@ -1,7 +1,7 @@
 {
   "name": "Catch Lemons dev v1",
   "short_name": "CatchLemons",
-  "theme_color": "yellow",
+  "theme_color": "white",
   "background_color": "silver",
   "start_url": "./",
   "id": "demo-1",
